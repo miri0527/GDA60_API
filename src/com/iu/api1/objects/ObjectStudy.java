@@ -26,5 +26,8 @@ public class ObjectStudy {
 		
 		boolean check = object.equals(obj);
 		System.out.println(check);
+		
+		Object o = child; //다형성
+		
 	}
 }

@@ -12,7 +12,7 @@ public class StringEx2 {
 			while(check) {
 				System.out.println("파일명 입력");
 				String fileName = scanner.next();
-				int n = fileName.indexOf(".");;  //.을 기준으로 자르기
+				int n = fileName.lastIndexOf(".");;  //.을 기준으로 자르기
 			    for(int i=0; i<names.length; i++) {
 			    	if(fileName.substring(n+1).equals(names[i])) {
 			    		System.out.println(fileName);

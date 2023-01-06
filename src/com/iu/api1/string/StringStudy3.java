@@ -1,8 +1,13 @@
 package com.iu.api1.string;
 
+import java.util.Scanner;
+
 public class StringStudy3 {
 
 	public static void main(String[] args) {
+		//import 안하고 쓸 수 있는것 : 같은 패키지 안에 있는 것 또는 java.lang. 패키지
+		Object object = new Object();
+		Scanner scanner = new Scanner(System.in); //import함
 		//주소비교
 		//String은 불변 -> 값을 변경시킬 수 없다
 		String str1 = "hello";

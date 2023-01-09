@@ -6,7 +6,8 @@ public class WeatherData {
 	private String data;
 	
 	public WeatherData() {
-		this.data = "SEOUL,12,맑음,60,Daegu,60,비,10," 
+		this.data = "SEOUL,12,맑음,60,Daegu,60,비,10,"
+				
 				+ "Jju,-56,눈,12,junju,32,흐림,5";
 	}
 	

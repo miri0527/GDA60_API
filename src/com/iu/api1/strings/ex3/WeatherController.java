@@ -42,9 +42,9 @@ public class WeatherController {
 				wdto= wd.init();
 				System.out.println("초기화가 완료 되었습니다");
 			}else if(num == 2) {
-				WeatherView.view();
+				wv.view(wdto);
 			}else if(num == 4) {
-				this.weatherDtos = wi.add(wdto);
+				this.wdto = wi.add(wdto);
 			}
 			
 			

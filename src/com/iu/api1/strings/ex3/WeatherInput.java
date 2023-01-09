@@ -36,11 +36,11 @@ public class WeatherInput {
 		System.out.println("도시명을 입력하세요");
 		weatherDto.setCity(scanner.next());
 		System.out.println("기온을 입력하세요");
-		weatherDto.setGion(scanner.next());
+		weatherDto.setGion(scanner.nextInt());
 		System.out.println("날씨를 입력하세요");
 		weatherDto.setStatus(scanner.next());
 		System.out.println("미세먼지 입력하세요");
-		weatherDto.setMise(scanner.next());
+		weatherDto.setMise(scanner.nextInt());
 		WeatherDto[] newInfo = new WeatherDto[weatherDtos.length + 1];
 		
 		for(int i=0; i<weatherDtos.length; i++) {

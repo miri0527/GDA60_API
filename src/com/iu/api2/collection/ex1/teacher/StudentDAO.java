@@ -91,14 +91,14 @@ private Scanner scanner;
 	}
 	
 	//학생정보초기화
-	public ArrayList<StudentDTO> init() { //ArrayList라는 타입을 
+	public ArrayList<StudentDTO> init() { //ArrayList라는 타입을 return
 		String data = this.sb.toString();
 		data = data.replace(" ", "-");
 		data = data.replace(",", "");
 		StringTokenizer st = new StringTokenizer(data, "-");
 		ArrayList<StudentDTO> ar = new ArrayList<>(); //StudentDTO는 while문이 사라지면 같이 사라지기 때문에 배열에 저장
 		while(st.hasMoreTokens()) {
-			StudentDTO studentDTO = new StudentDTO();
+			StudentDTO studentDTO = new StudentDTO(); //while문밖에 선언하면 객체 여러개를 담을 수 없기 때문
 			studentDTO.setName(st.nextToken());
 			studentDTO.setNum(Integer.parseInt(st.nextToken()));
 			studentDTO.setKor(Integer.parseInt(st.nextToken()));
@@ -106,7 +106,7 @@ private Scanner scanner;
 			studentDTO.setMath(Integer.parseInt(st.nextToken()));
 			studentDTO.setTotal(studentDTO.getKor() + studentDTO.getEng() + studentDTO.getMath());
 			studentDTO.setAvg(studentDTO.getTotal()/3.0);
-			ar.add(studentDTO);
+			ar.add(studentDTO); //배열에 studentDTO 담기
 			
 		}
 		return ar;

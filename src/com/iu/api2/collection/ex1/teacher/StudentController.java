@@ -58,6 +58,7 @@ public class StudentController {
 					}else {
 						studentView.view("삭제 실패");
 					}
+					break;
 				default :
 					check = false;
 			}

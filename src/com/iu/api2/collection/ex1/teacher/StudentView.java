@@ -2,7 +2,7 @@ package com.iu.api2.collection.ex1.teacher;
 
 import java.util.ArrayList;
 
-public class StudentView {
+public class StudentView { //정보전체조회
 	
 	public void view(String msg) {
 		System.out.println(msg);

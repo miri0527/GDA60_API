@@ -9,7 +9,11 @@ public class Ex1Main {
 		//3. 학생정보검샥조회(이름)
 		//4. 헉생정보추가
 		//5. 학생정보삭제(이름)
-		//6. 프로그램정보
+		//6. 프로그램종료
+		
+		StudentController sc = new StudentController();
+		sc.start();
+		
 		
 
 	}

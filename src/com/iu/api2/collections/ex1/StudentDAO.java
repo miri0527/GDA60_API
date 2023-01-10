@@ -25,9 +25,10 @@ public class StudentDAO {
 		StudentDTO[] students = new StudentDTO[st.countTokens()];
 		
 		while(st.hasMoreTokens()) {
-			StudentDTO sdto = new StudentDTO();
-			sdto.setName(st.nextToken());
-			sdto.setNum(Integer.parseInt());
+//			StudentDTO sdto = new StudentDTO();
+//			sdto.setName(st.nextToken());
+//			sdto.setNum(Integer.parseInt(st.nextToken()));
+			System.out.println(st.nextToken());
 		}
 		
 		return students;

@@ -18,6 +18,9 @@ public class CollectionMain1 {
 		ArrayList<ArrayList<ArrayList<Integer>>> arrs = new ArrayList<>();
 		
 		HashMap<String, ArrayList<Integer>> map2 = new HashMap<>();
+		
+		map2.put("ar1", ar1);
+		map2.put("ar2", ar2);
 
 	}
 

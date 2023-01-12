@@ -8,19 +8,7 @@ public class ExMain {
 		
 		StudentController controller = new StudentController();
 		controller.start();
-	
-		
-		
-		
-		//for each문
-		
-//		for(StudentDTO studentDTO:ar) {
-//			
-//		}
-//		int [] nums = new int[3];
-//		for(int n:nums) {
-//			//인덱스 번호 쓸 수 x
-//		}
+
 	}
 
 }

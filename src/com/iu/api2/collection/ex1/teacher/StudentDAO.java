@@ -153,11 +153,20 @@ private Scanner scanner;
 		
 		StudentDTO st = null;
 		
-		for(StudentDTO studentDTO:ar) {
+		for(StudentDTO studentDTO:ar) { //studentDTO를 
 			if(name.equals(studentDTO.getName())) {
 				st = studentDTO;
 				break;
 			}
+		}
+		
+		for(int i=0; i<ar.size(); i++) {
+			if(ar.get(i).equals(name)) {
+				st = ar.get(i);
+				break;
+			}
+			
+//			StudentDTO studentDTO = ar.get(i);
 		}
 		
 		return st;

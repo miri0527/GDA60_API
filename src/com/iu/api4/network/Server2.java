@@ -52,14 +52,12 @@ public class Server2 {
 				String msg = null;
 				if(num == 1) {
 					System.out.println("점심메뉴를 골라주세요");
-					for(int i=0; i<lunch.length; i++) { //인덱스 번호를 랜덤숫자에 넣음
-						int index = random.nextInt(2); //인덱스가 0 1 2 출력
-						if(index == i) {
-							msg = lunch[i];
-						}
-					}
-				}else{
+						int index = random.nextInt(3); //인덱스가 0 1 2 출력
+						msg = lunch[index];
+				}else if(num == 2){
 					System.out.println("저녁메뉴를 골라주세요");
+				}else {
+					break;
 				}
 				
 				bw.write(msg + "\r\n");

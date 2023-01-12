@@ -31,7 +31,7 @@ public class Client2 {
 		Scanner scanner= new Scanner(System.in);
 		
 		try {
-			socket = new Socket("192.168.1.123", 8282);
+			socket = new Socket("localhost", 8282);
 			System.out.println("서버로 부터 접속 성공");
 			os = socket.getOutputStream();
 			ow = new OutputStreamWriter(os);
@@ -40,9 +40,7 @@ public class Client2 {
 			while(true) {
 				System.out.println("1.점심 2.저녁 3.종료");
 				int num = scanner.nextInt(); //번호 입력
-				if(num == 3) {
-					break;
-				}
+				
 				
 				bw.write(num + "\r\n");
 				bw.flush();

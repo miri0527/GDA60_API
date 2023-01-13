@@ -41,7 +41,6 @@ public class Client2 {
 				System.out.println("1.점심 2.저녁 3.종료");
 				int num = scanner.nextInt(); //번호 입력
 				
-				
 				bw.write(num + "\r\n");
 				bw.flush();
 				
